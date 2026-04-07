@@ -1,9 +1,9 @@
 aid: prestmit
 name: Prestmit
 description: >-
-  Our API allows you to unlock the power of gift cards. With it, you can
-  effortlessly buy and sell gift cards using API, tapping into our extensive
-  network of trusted partners and seamless transactions. 
+  Our API allows you to unlock the power of gift cards. With it, you can effortlessly
+  buy and sell gift cards using API, tapping into our extensive network of trusted
+  partners and seamless transactions.
 type: Index
 position: Consumer
 access: 3rd-Party
@@ -19,9 +19,9 @@ apis:
   - aid: prestmit:prestmit
     name: Prestmit
     description: >-
-      Our API allows you to unlock the power of gift cards. With it, you can
-      effortlessly buy and sell gift cards using API, tapping into our extensive
-      network of trusted partners and seamless transactions. 
+      Our API allows you to unlock the power of gift cards. With it, you can effortlessly
+      buy and sell gift cards using API, tapping into our extensive network of trusted
+      partners and seamless transactions.
     humanURL: ' https://prestmit.io/developers'
     tags:
       - API
