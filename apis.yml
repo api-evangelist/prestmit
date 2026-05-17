@@ -55,7 +55,7 @@ common:
     url: https://documentation.prestmit.io/
   - type: Sandbox
     url: https://sandbox.prestmit.io/
-  - type: Sign Up
+  - type: SignUp
     url: https://prestmit.io/signup
   - type: Login
     url: https://prestmit.io/login
@@ -63,9 +63,9 @@ common:
     url: https://prestmit.io/blog
   - type: Support
     url: https://prestmit.io/contact
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://prestmit.io/terms-of-service
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://prestmit.io/privacy-policy
 maintainers:
   - FN: Kin Lane
