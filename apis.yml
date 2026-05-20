@@ -47,6 +47,8 @@ apis:
       - type: Sandbox
         url: https://sandbox.prestmit.io/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/prestmit
   - type: Portal
     url: https://prestmit.io/
   - type: Developers
