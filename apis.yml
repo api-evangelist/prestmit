@@ -69,6 +69,8 @@ common:
     url: https://prestmit.io/terms-of-service
   - type: PrivacyPolicy
     url: https://prestmit.io/privacy-policy
+  - type: LLMsTxt
+    url: https://prestmit.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
