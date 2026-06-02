@@ -2,12 +2,14 @@
   "repo": "prestmit",
   "feeds": [
     {
-      "source": "https://prestmit.io/blog",
-      "feed_url": "https://prestmit.io/blog/feed/",
-      "title": "Prestmit",
-      "saved": 10
+      "source": "https://prestmit.io/blog/feed/",
+      "error": "HTTPError"
+    },
+    {
+      "source": "https://prestmit.io/login",
+      "error": "HTTPError"
     }
   ],
   "post_count": 23,
-  "fetched": "2026-05-17T20:20:35Z"
+  "fetched": "2026-06-01T23:35:02Z"
 }
