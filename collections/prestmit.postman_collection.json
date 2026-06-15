@@ -1,0 +1,2517 @@
+{
+  "item": [
+    {
+      "id": "b70cef0b-491c-423f-98f5-a57466a401c5",
+      "name": "General",
+      "description": {
+        "content": "Account profile, commissions, service availability, and bank lookups.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "852b22aa-d67b-4110-9c5d-322ac4b32aa7",
+          "name": "Retrieve account profile",
+          "request": {
+            "name": "Retrieve account profile",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "general",
+                "user"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3dc6f7f6-3c3a-4a5c-98cb-44942cbb4dcb",
+              "name": "Account profile returned.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "general",
+                    "user"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b1401038-320a-4418-bd12-eb54cf6d47b5",
+          "name": "Check current commission and fee rates",
+          "request": {
+            "name": "Check current commission and fee rates",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "general",
+                "commissions-and-fees"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a2eb87c5-92af-4bd7-8336-3c443e3aec40",
+              "name": "Current rates.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "general",
+                    "commissions-and-fees"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "86187b52-af2a-4578-8117-c28582e50365",
+          "name": "Check service availability",
+          "request": {
+            "name": "Check service availability",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "general",
+                "service-availability"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "53f2ed48-a823-43a3-a291-eef36669030e",
+              "name": "Service status.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "general",
+                    "service-availability"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b837cbe6-f0cd-43f9-b636-e2a390e0bb8e",
+          "name": "List Nigerian banks",
+          "request": {
+            "name": "List Nigerian banks",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "general",
+                "nigerian-banks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aa9de004-63e6-4732-a153-9e25e290b83c",
+              "name": "Bank list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "general",
+                    "nigerian-banks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "ae59b1c2-35e1-4cf6-81e9-23d4c067a585",
+      "name": "Lookup",
+      "description": {
+        "content": "Reference data for banks, gift card categories, and payout methods.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6016c4c4-013b-4a38-b330-98dd08355122",
+          "name": "Nigerian bank directory",
+          "request": {
+            "name": "Nigerian bank directory",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "nigerian-banks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a0d3629c-19a0-402a-a1ec-1079bb92dc21",
+              "name": "Bank directory.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "nigerian-banks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9450c182-e830-467f-a2f8-55a5c887fbf7",
+          "name": "Ghanaian bank directory",
+          "request": {
+            "name": "Ghanaian bank directory",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "ghanian-banks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ecdd76cd-17b4-429d-ab3b-010a100a6efc",
+              "name": "Bank directory.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "ghanian-banks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "66ae083d-66c3-4676-8ae1-14690174d0f7",
+          "name": "List gift card categories",
+          "request": {
+            "name": "List gift card categories",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "74ccd518-2c8c-4b0d-923d-6f5f43febcd7",
+              "name": "Category list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c5fabd07-d2ee-4ced-89a6-ddbe2679e1c1",
+          "name": "List saleable gift card subcategories",
+          "request": {
+            "name": "List saleable gift card subcategories",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-subcategories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dc5f9dc5-0803-450a-94df-20a91b8d0bc5",
+              "name": "Subcategory list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-subcategories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "20c46a45-e2ad-4a19-a8bd-05ba9ea3a2e9",
+          "name": "List available gift card sale filters",
+          "request": {
+            "name": "List available gift card sale filters",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-filters"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dadfe0da-ec3f-4e18-8c74-b24a6ded49b4",
+              "name": "Filter list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-filters"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0ec25567-1a6d-4a3b-bfa7-6eb1c3c0cc16",
+          "name": "List gift card payout method names",
+          "request": {
+            "name": "List gift card payout method names",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-payout-methods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "903bd600-10f3-42b6-8327-932a1fbdb9e9",
+              "name": "Payout method names.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-payout-methods"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "6fe8f8b4-8f5c-43ab-baaa-eba09bb7a73e",
+      "name": "Bank Accounts",
+      "description": {
+        "content": "Manage Naira and Cedis payout bank accounts.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1f01c6d1-9484-487a-8c0f-70046940fdd6",
+          "name": "Retrieve Naira bank accounts",
+          "request": {
+            "name": "Retrieve Naira bank accounts",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "naira",
+                "list"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f7b75459-9297-4bd2-8050-227ad3483252",
+              "name": "Naira accounts.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "naira",
+                    "list"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b46bc573-7043-4d43-a969-051a6d036467",
+          "name": "Add Naira bank account",
+          "request": {
+            "name": "Add Naira bank account",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "naira",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "199d3765-7631-476e-8ae1-d14f34051d47",
+              "name": "Account created.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "naira",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "66181c0a-e68f-49d4-8b34-5231581501b7",
+          "name": "Remove a Naira bank account",
+          "request": {
+            "name": "Remove a Naira bank account",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "naira",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "709e1b52-3c26-4edc-b808-f829f7eb225b",
+              "name": "Account removed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "naira",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c5370c61-6462-4560-8aab-be62fb5c0b42",
+          "name": "Retrieve Cedis bank accounts",
+          "request": {
+            "name": "Retrieve Cedis bank accounts",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "cedis",
+                "list"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ae1983e5-0bc3-48ac-860b-20208d46290d",
+              "name": "Cedis accounts.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "cedis",
+                    "list"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b31f2267-df37-473d-8db4-d58af1ea8099",
+          "name": "Add Cedis bank account (deprecated)",
+          "request": {
+            "name": "Add Cedis bank account (deprecated)",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "cedis",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "582ed2ac-7ed2-48aa-870f-515e946f8d8f",
+              "name": "Account created.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "cedis",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2c2b0e74-e0a2-405b-9412-5d750e256e19",
+          "name": "Add Cedis bank account (v2)",
+          "request": {
+            "name": "Add Cedis bank account (v2)",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "cedis",
+                "create-v2"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "64018fa5-4e38-4f18-83be-e3e3670d3d8c",
+              "name": "Account created.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "cedis",
+                    "create-v2"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "037965f3-acf2-4766-ab2c-00aa565109a8",
+          "name": "Remove a Cedis bank account",
+          "request": {
+            "name": "Remove a Cedis bank account",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "bank-accounts",
+                "cedis",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "acb9a752-05fb-4a89-84e5-db13116adc92",
+              "name": "Account removed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "bank-accounts",
+                    "cedis",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "f86f18d6-eaa7-47c4-9afd-e38a8b580a58",
+      "name": "Wallet",
+      "description": {
+        "content": "Wallet balance and fiat withdrawal management.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "df794bc2-5e2f-45e3-83f8-d9408370ce24",
+          "name": "Fetch wallet details",
+          "request": {
+            "name": "Fetch wallet details",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "wallet",
+                "fiat",
+                "details"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f1a0c104-f539-4f99-a3eb-6f97487bec8c",
+              "name": "Wallet details.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "wallet",
+                    "fiat",
+                    "details"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "712aff82-a358-4897-b44f-9d477fc755b7",
+          "name": "Request a fiat withdrawal",
+          "request": {
+            "name": "Request a fiat withdrawal",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "wallet",
+                "fiat",
+                "create-withdrawal"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e47de69f-e54c-4a43-9393-bfee8c4bef3c",
+              "name": "Withdrawal initiated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "wallet",
+                    "fiat",
+                    "create-withdrawal"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b89f4292-6415-4291-82b9-02c6ae5b8eca",
+          "name": "List withdrawal history",
+          "request": {
+            "name": "List withdrawal history",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "wallet",
+                "fiat",
+                "withdrawal-history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "83233cde-6c82-449f-8e8b-9cb404b4e2e5",
+              "name": "Withdrawal history.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "wallet",
+                    "fiat",
+                    "withdrawal-history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "42a9ce17-5f25-4933-9b13-ec4453d558e4",
+          "name": "Get withdrawal receipt",
+          "request": {
+            "name": "Get withdrawal receipt",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "wallet",
+                "fiat",
+                "withdrawal-history",
+                ":withdrawalId",
+                "receipt"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "withdrawalId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "eb0a586e-4786-422a-a860-abb78c883b61",
+              "name": "Withdrawal receipt.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "wallet",
+                    "fiat",
+                    "withdrawal-history",
+                    ":withdrawalId",
+                    "receipt"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "withdrawalId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "c1df1a3e-f0d5-4231-b374-50fef09ef69b",
+      "name": "Gift Cards - Buy",
+      "description": {
+        "content": "Purchase gift cards programmatically.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7e1d0b62-588d-4108-98d2-c4c4162f7860",
+          "name": "Get buy configuration",
+          "request": {
+            "name": "Get buy configuration",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "config"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d3744fd7-67e2-40fe-9000-d8b480a6b2b8",
+              "name": "Configuration data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "config"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "9b23ba3b-6add-4f7c-8e79-38863b2acaad",
+          "name": "Calculate payment totals for a purchase",
+          "request": {
+            "name": "Calculate payment totals for a purchase",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "calculate-payment"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a9d9ea3c-7f89-4172-b5d3-eab54f984a98",
+              "name": "Calculated totals.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "calculate-payment"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "80c4105f-bf82-42e4-acba-295a6e9e16c1",
+          "name": "Place a gift card purchase order",
+          "request": {
+            "name": "Place a gift card purchase order",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b793670d-45a1-49bf-b129-2e87d46be44e",
+              "name": "Order placed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d31ec42f-fb43-4e41-9df0-6c48a22d8557",
+          "name": "Poll crypto payment status",
+          "request": {
+            "name": "Poll crypto payment status",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "crypto-payment-status",
+                ":reference"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reference",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d7482282-6808-4dc7-8d35-ad3860b13ce4",
+              "name": "Payment status.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "crypto-payment-status",
+                    ":reference"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "reference",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "97fa31c2-e1c3-48c1-8209-1761beef0f03",
+          "name": "Retrieve purchased gift card codes",
+          "request": {
+            "name": "Retrieve purchased gift card codes",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "fetch-codes",
+                ":reference"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reference",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "59e1b09e-9d4f-4e40-8805-c41f54497141",
+              "name": "Gift card codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "fetch-codes",
+                    ":reference"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "reference",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "88b05748-31ce-4961-ac71-baa40d81a124",
+          "name": "List gift card purchase history",
+          "request": {
+            "name": "List gift card purchase history",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ef9958f8-d874-4a29-b53c-142c00575494",
+              "name": "Purchase history.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "451acdad-9470-41e4-8ae1-f8ac7bced148",
+      "name": "Gift Cards - Sell",
+      "description": {
+        "content": "Sell gift cards and configure payout methods.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c65d23bd-33e6-4a86-a9a2-2e7e4c521c91",
+          "name": "Fetch rate calculator data",
+          "request": {
+            "name": "Fetch rate calculator data",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "rate-calculator-data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "de91e8fb-b844-4595-8533-cce2b459628f",
+              "name": "Rate calculator data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "rate-calculator-data"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d183681c-edf1-435f-9a6f-1abd90282c5e",
+          "name": "List payout method options",
+          "request": {
+            "name": "List payout method options",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "payout-methods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f3439557-b49b-4c40-88a7-ac9678013907",
+              "name": "Payout options.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "payout-methods"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bcbf6b9a-aab7-4316-a30f-4ac05537d770",
+          "name": "Initiate a gift card sale",
+          "request": {
+            "name": "Initiate a gift card sale",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3bbfc88f-408c-4688-8b89-df3b054329d8",
+              "name": "Sale initiated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "104c83ae-bff7-4084-afcd-560fd98a25e5",
+          "name": "List gift card sales history",
+          "request": {
+            "name": "List gift card sales history",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c910dc13-9ac2-4def-b0aa-eae8fac140a5",
+              "name": "Sales history.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.prestmit.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b4e0f8f3-e065-47fb-bdea-00ee25587d8c",
+    "name": "Prestmit Partner API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Prestmit Partner API allows developers to automate buying and selling of\ngift cards, manage wallet balances and payouts, and integrate Prestmit\ntransactions into their own applications. Authentication is performed via an\nx-api-key header, with optional IP whitelisting. A sandbox environment is\navailable for development.\n\n\nContact Support:\n Name: Prestmit Developer Support",
+      "type": "text/plain"
+    }
+  }
+}

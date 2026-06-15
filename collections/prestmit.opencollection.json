@@ -1,0 +1,442 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Prestmit Partner API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "General",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve account profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/user"
+          },
+          "docs": "Retrieve account profile"
+        },
+        {
+          "info": {
+            "name": "Check current commission and fee rates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/commissions-and-fees"
+          },
+          "docs": "Check current commission and fee rates"
+        },
+        {
+          "info": {
+            "name": "Check service availability",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/service-availability"
+          },
+          "docs": "Check service availability"
+        },
+        {
+          "info": {
+            "name": "List Nigerian banks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/nigerian-banks"
+          },
+          "docs": "List Nigerian banks"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Lookup",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Nigerian bank directory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/nigerian-banks"
+          },
+          "docs": "Nigerian bank directory"
+        },
+        {
+          "info": {
+            "name": "Ghanaian bank directory",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/ghanian-banks"
+          },
+          "docs": "Ghanaian bank directory"
+        },
+        {
+          "info": {
+            "name": "List gift card categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/sell-giftcard-categories"
+          },
+          "docs": "List gift card categories"
+        },
+        {
+          "info": {
+            "name": "List saleable gift card subcategories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/sell-giftcard-subcategories"
+          },
+          "docs": "List saleable gift card subcategories"
+        },
+        {
+          "info": {
+            "name": "List available gift card sale filters",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/sell-giftcard-filters"
+          },
+          "docs": "List available gift card sale filters"
+        },
+        {
+          "info": {
+            "name": "List gift card payout method names",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/lookup/sell-giftcard-payout-methods"
+          },
+          "docs": "List gift card payout method names"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Bank Accounts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve Naira bank accounts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/list"
+          },
+          "docs": "Retrieve Naira bank accounts"
+        },
+        {
+          "info": {
+            "name": "Add Naira bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/create"
+          },
+          "docs": "Add Naira bank account"
+        },
+        {
+          "info": {
+            "name": "Remove a Naira bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove a Naira bank account"
+        },
+        {
+          "info": {
+            "name": "Retrieve Cedis bank accounts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/list"
+          },
+          "docs": "Retrieve Cedis bank accounts"
+        },
+        {
+          "info": {
+            "name": "Add Cedis bank account (deprecated)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/create"
+          },
+          "docs": "Add Cedis bank account (deprecated)"
+        },
+        {
+          "info": {
+            "name": "Add Cedis bank account (v2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/create-v2"
+          },
+          "docs": "Add Cedis bank account (v2)"
+        },
+        {
+          "info": {
+            "name": "Remove a Cedis bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove a Cedis bank account"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Wallet",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch wallet details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/details"
+          },
+          "docs": "Fetch wallet details"
+        },
+        {
+          "info": {
+            "name": "Request a fiat withdrawal",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/create-withdrawal"
+          },
+          "docs": "Request a fiat withdrawal"
+        },
+        {
+          "info": {
+            "name": "List withdrawal history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/withdrawal-history"
+          },
+          "docs": "List withdrawal history"
+        },
+        {
+          "info": {
+            "name": "Get withdrawal receipt",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/withdrawal-history/:withdrawalId/receipt",
+            "params": [
+              {
+                "name": "withdrawalId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get withdrawal receipt"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Gift Cards - Buy",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get buy configuration",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/config"
+          },
+          "docs": "Get buy configuration"
+        },
+        {
+          "info": {
+            "name": "Calculate payment totals for a purchase",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/calculate-payment"
+          },
+          "docs": "Calculate payment totals for a purchase"
+        },
+        {
+          "info": {
+            "name": "Place a gift card purchase order",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/create"
+          },
+          "docs": "Place a gift card purchase order"
+        },
+        {
+          "info": {
+            "name": "Poll crypto payment status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/crypto-payment-status/:reference",
+            "params": [
+              {
+                "name": "reference",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Poll crypto payment status"
+        },
+        {
+          "info": {
+            "name": "Retrieve purchased gift card codes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/fetch-codes/:reference",
+            "params": [
+              {
+                "name": "reference",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve purchased gift card codes"
+        },
+        {
+          "info": {
+            "name": "List gift card purchase history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/buy/history"
+          },
+          "docs": "List gift card purchase history"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Gift Cards - Sell",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch rate calculator data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/rate-calculator-data"
+          },
+          "docs": "Fetch rate calculator data"
+        },
+        {
+          "info": {
+            "name": "List payout method options",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/payout-methods"
+          },
+          "docs": "List payout method options"
+        },
+        {
+          "info": {
+            "name": "Initiate a gift card sale",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/create"
+          },
+          "docs": "Initiate a gift card sale"
+        },
+        {
+          "info": {
+            "name": "List gift card sales history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/history"
+          },
+          "docs": "List gift card sales history"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
