@@ -42,7 +42,7 @@ apis:
     properties:
       - type: Documentation
         url: https://documentation.prestmit.io/
-      - type: Developer Portal
+      - type: DeveloperPortal
         url: https://prestmit.io/developers
       - type: Sandbox
         url: https://sandbox.prestmit.io/
@@ -57,7 +57,7 @@ common:
     url: https://documentation.prestmit.io/
   - type: Sandbox
     url: https://sandbox.prestmit.io/
-  - type: SignUp
+  - type: Signup
     url: https://prestmit.io/signup
   - type: Login
     url: https://prestmit.io/login
@@ -69,7 +69,7 @@ common:
     url: https://prestmit.io/terms-of-service
   - type: PrivacyPolicy
     url: https://prestmit.io/privacy-policy
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://prestmit.io/llms.txt
 maintainers:
   - FN: Kin Lane

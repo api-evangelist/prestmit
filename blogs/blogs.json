@@ -2,17 +2,11 @@
   "repo": "prestmit",
   "feeds": [
     {
-      "source": "https://blog.prestmit.io/feed",
-      "feed_url": "https://blog.prestmit.io/feed",
-      "title": "",
+      "source": "https://prestmit.io/blog",
       "saved": 0,
-      "method": "feed"
-    },
-    {
-      "source": "https://prestmit.io/login",
-      "error": "HTTPError"
+      "error": "HTTP 502 Bad Gateway on blog listing"
     }
   ],
-  "post_count": 23,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 28,
+  "fetched": "2026-06-27T13:03:00Z"
 }
