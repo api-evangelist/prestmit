@@ -1,0 +1,18 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/prestmit-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: x-api-key
+  description: |-
+    Prestmit Partner API key issued from the developer dashboard. Optional
+    IP whitelisting can be enabled per key.
+  sources:
+  - openapi/prestmit-openapi.yml
