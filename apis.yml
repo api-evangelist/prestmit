@@ -47,6 +47,8 @@ apis:
       - type: Sandbox
         url: https://sandbox.prestmit.io/
 common:
+  - type: AgenticAccess
+    url: agentic-access/prestmit-agentic-access.yml
   - type: DomainSecurity
     url: security/prestmit-domain-security.yml
   - type: Authentication

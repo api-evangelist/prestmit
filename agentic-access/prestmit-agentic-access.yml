@@ -1,0 +1,389 @@
+generated: '2026-07-15'
+method: generated
+source: openapi/prestmit-openapi.yml
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 31
+  by_action_class:
+    connected: 22
+    acting: 9
+  by_consequence:
+    read: 22
+    write: 5
+    physical: 4
+  human_in_the_loop_required: 0
+operations:
+- path: /api/partners/v1/general/user
+  method: get
+  operationId: getAccountProfile
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/general/commissions-and-fees
+  method: get
+  operationId: getCommissionsAndFees
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/general/service-availability
+  method: get
+  operationId: getServiceAvailability
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/general/nigerian-banks
+  method: get
+  operationId: listNigerianBanksGeneral
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/nigerian-banks
+  method: get
+  operationId: lookupNigerianBanks
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/ghanian-banks
+  method: get
+  operationId: lookupGhanaianBanks
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/sell-giftcard-categories
+  method: get
+  operationId: lookupSellGiftcardCategories
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/sell-giftcard-subcategories
+  method: get
+  operationId: lookupSellGiftcardSubcategories
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/sell-giftcard-filters
+  method: get
+  operationId: lookupSellGiftcardFilters
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/lookup/sell-giftcard-payout-methods
+  method: get
+  operationId: lookupSellGiftcardPayoutMethods
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/bank-accounts/naira/list
+  method: get
+  operationId: listNairaBankAccounts
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/bank-accounts/naira/create
+  method: post
+  operationId: createNairaBankAccount
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/bank-accounts/naira/{id}
+  method: delete
+  operationId: deleteNairaBankAccount
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/bank-accounts/cedis/list
+  method: get
+  operationId: listCedisBankAccounts
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/bank-accounts/cedis/create
+  method: post
+  operationId: createCedisBankAccountV1
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/bank-accounts/cedis/create-v2
+  method: post
+  operationId: createCedisBankAccountV2
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/bank-accounts/cedis/{id}
+  method: delete
+  operationId: deleteCedisBankAccount
+  x-agentic-access:
+    action-class: acting
+    consequence: write
+    subject: required
+    audience: null
+    token:
+      max-ttl: 900
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/wallet/fiat/details
+  method: get
+  operationId: getWalletDetails
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/wallet/fiat/create-withdrawal
+  method: post
+  operationId: createWalletWithdrawal
+  x-agentic-access:
+    action-class: acting
+    consequence: physical
+    subject: required
+    audience: null
+    token:
+      max-ttl: 300
+      exchange: true
+      purpose-required: true
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/wallet/fiat/withdrawal-history
+  method: get
+  operationId: getWalletWithdrawalHistory
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/wallet/fiat/withdrawal-history/{withdrawalId}/receipt
+  method: get
+  operationId: getWalletWithdrawalReceipt
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/buy/config
+  method: get
+  operationId: getBuyConfig
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/buy/calculate-payment
+  method: post
+  operationId: calculateBuyPayment
+  x-agentic-access:
+    action-class: acting
+    consequence: physical
+    subject: required
+    audience: null
+    token:
+      max-ttl: 300
+      exchange: true
+      purpose-required: true
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/giftcard/trade/buy/create
+  method: post
+  operationId: createBuyOrder
+  x-agentic-access:
+    action-class: acting
+    consequence: physical
+    subject: required
+    audience: null
+    token:
+      max-ttl: 300
+      exchange: true
+      purpose-required: true
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/giftcard/trade/buy/crypto-payment-status/{reference}
+  method: get
+  operationId: getBuyCryptoPaymentStatus
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/buy/fetch-codes/{reference}
+  method: get
+  operationId: fetchBuyCodes
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/buy/history
+  method: get
+  operationId: getBuyHistory
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/sell/rate-calculator-data
+  method: get
+  operationId: getSellRateCalculatorData
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/sell/payout-methods
+  method: get
+  operationId: getSellPayoutMethods
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /api/partners/v1/giftcard/trade/sell/create
+  method: post
+  operationId: createSellTransaction
+  x-agentic-access:
+    action-class: acting
+    consequence: physical
+    subject: required
+    audience: null
+    token:
+      max-ttl: 300
+      exchange: true
+      purpose-required: true
+    escalation:
+      human-in-the-loop: conditional
+      triggers:
+      - abnormal
+      - high-value
+    audit: required
+- path: /api/partners/v1/giftcard/trade/sell/history
+  method: get
+  operationId: getSellHistory
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
