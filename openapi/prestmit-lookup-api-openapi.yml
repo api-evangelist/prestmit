@@ -1,0 +1,97 @@
+openapi: 3.1.0
+info:
+  title: Prestmit Partner Bank Accounts Lookup API
+  description: 'The Prestmit Partner API allows developers to automate buying and selling of
+
+    gift cards, manage wallet balances and payouts, and integrate Prestmit
+
+    transactions into their own applications. Authentication is performed via an
+
+    x-api-key header, with optional IP whitelisting. A sandbox environment is
+
+    available for development.
+
+    '
+  version: '1.0'
+  contact:
+    name: Prestmit Developer Support
+    url: https://prestmit.io/developers
+  license:
+    name: Prestmit Terms of Service
+    url: https://prestmit.io/terms-of-service
+servers:
+- url: https://api.prestmit.io
+  description: Production
+- url: https://dev-api.prestmit.io
+  description: Sandbox
+security:
+- apiKey: []
+tags:
+- name: Lookup
+  description: Reference data for banks, gift card categories, and payout methods.
+paths:
+  /api/partners/v1/lookup/nigerian-banks:
+    get:
+      tags:
+      - Lookup
+      summary: Nigerian bank directory
+      operationId: lookupNigerianBanks
+      responses:
+        '200':
+          description: Bank directory.
+  /api/partners/v1/lookup/ghanian-banks:
+    get:
+      tags:
+      - Lookup
+      summary: Ghanaian bank directory
+      operationId: lookupGhanaianBanks
+      responses:
+        '200':
+          description: Bank directory.
+  /api/partners/v1/lookup/sell-giftcard-categories:
+    get:
+      tags:
+      - Lookup
+      summary: List gift card categories
+      operationId: lookupSellGiftcardCategories
+      responses:
+        '200':
+          description: Category list.
+  /api/partners/v1/lookup/sell-giftcard-subcategories:
+    get:
+      tags:
+      - Lookup
+      summary: List saleable gift card subcategories
+      operationId: lookupSellGiftcardSubcategories
+      responses:
+        '200':
+          description: Subcategory list.
+  /api/partners/v1/lookup/sell-giftcard-filters:
+    get:
+      tags:
+      - Lookup
+      summary: List available gift card sale filters
+      operationId: lookupSellGiftcardFilters
+      responses:
+        '200':
+          description: Filter list.
+  /api/partners/v1/lookup/sell-giftcard-payout-methods:
+    get:
+      tags:
+      - Lookup
+      summary: List gift card payout method names
+      operationId: lookupSellGiftcardPayoutMethods
+      responses:
+        '200':
+          description: Payout method names.
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: 'Prestmit Partner API key issued from the developer dashboard. Optional
+
+        IP whitelisting can be enabled per key.
+
+        '

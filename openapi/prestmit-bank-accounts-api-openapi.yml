@@ -1,0 +1,119 @@
+openapi: 3.1.0
+info:
+  title: Prestmit Partner Bank Accounts API
+  description: 'The Prestmit Partner API allows developers to automate buying and selling of
+
+    gift cards, manage wallet balances and payouts, and integrate Prestmit
+
+    transactions into their own applications. Authentication is performed via an
+
+    x-api-key header, with optional IP whitelisting. A sandbox environment is
+
+    available for development.
+
+    '
+  version: '1.0'
+  contact:
+    name: Prestmit Developer Support
+    url: https://prestmit.io/developers
+  license:
+    name: Prestmit Terms of Service
+    url: https://prestmit.io/terms-of-service
+servers:
+- url: https://api.prestmit.io
+  description: Production
+- url: https://dev-api.prestmit.io
+  description: Sandbox
+security:
+- apiKey: []
+tags:
+- name: Bank Accounts
+  description: Manage Naira and Cedis payout bank accounts.
+paths:
+  /api/partners/v1/bank-accounts/naira/list:
+    get:
+      tags:
+      - Bank Accounts
+      summary: Retrieve Naira bank accounts
+      operationId: listNairaBankAccounts
+      responses:
+        '200':
+          description: Naira accounts.
+  /api/partners/v1/bank-accounts/naira/create:
+    post:
+      tags:
+      - Bank Accounts
+      summary: Add Naira bank account
+      operationId: createNairaBankAccount
+      responses:
+        '201':
+          description: Account created.
+  /api/partners/v1/bank-accounts/naira/{id}:
+    delete:
+      tags:
+      - Bank Accounts
+      summary: Remove a Naira bank account
+      operationId: deleteNairaBankAccount
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Account removed.
+  /api/partners/v1/bank-accounts/cedis/list:
+    get:
+      tags:
+      - Bank Accounts
+      summary: Retrieve Cedis bank accounts
+      operationId: listCedisBankAccounts
+      responses:
+        '200':
+          description: Cedis accounts.
+  /api/partners/v1/bank-accounts/cedis/create:
+    post:
+      tags:
+      - Bank Accounts
+      summary: Add Cedis bank account (deprecated)
+      deprecated: true
+      operationId: createCedisBankAccountV1
+      responses:
+        '201':
+          description: Account created.
+  /api/partners/v1/bank-accounts/cedis/create-v2:
+    post:
+      tags:
+      - Bank Accounts
+      summary: Add Cedis bank account (v2)
+      operationId: createCedisBankAccountV2
+      responses:
+        '201':
+          description: Account created.
+  /api/partners/v1/bank-accounts/cedis/{id}:
+    delete:
+      tags:
+      - Bank Accounts
+      summary: Remove a Cedis bank account
+      operationId: deleteCedisBankAccount
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '204':
+          description: Account removed.
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: 'Prestmit Partner API key issued from the developer dashboard. Optional
+
+        IP whitelisting can be enabled per key.
+
+        '

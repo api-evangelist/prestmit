@@ -1,0 +1,79 @@
+openapi: 3.1.0
+info:
+  title: Prestmit Partner Bank Accounts General API
+  description: 'The Prestmit Partner API allows developers to automate buying and selling of
+
+    gift cards, manage wallet balances and payouts, and integrate Prestmit
+
+    transactions into their own applications. Authentication is performed via an
+
+    x-api-key header, with optional IP whitelisting. A sandbox environment is
+
+    available for development.
+
+    '
+  version: '1.0'
+  contact:
+    name: Prestmit Developer Support
+    url: https://prestmit.io/developers
+  license:
+    name: Prestmit Terms of Service
+    url: https://prestmit.io/terms-of-service
+servers:
+- url: https://api.prestmit.io
+  description: Production
+- url: https://dev-api.prestmit.io
+  description: Sandbox
+security:
+- apiKey: []
+tags:
+- name: General
+  description: Account profile, commissions, service availability, and bank lookups.
+paths:
+  /api/partners/v1/general/user:
+    get:
+      tags:
+      - General
+      summary: Retrieve account profile
+      operationId: getAccountProfile
+      responses:
+        '200':
+          description: Account profile returned.
+  /api/partners/v1/general/commissions-and-fees:
+    get:
+      tags:
+      - General
+      summary: Check current commission and fee rates
+      operationId: getCommissionsAndFees
+      responses:
+        '200':
+          description: Current rates.
+  /api/partners/v1/general/service-availability:
+    get:
+      tags:
+      - General
+      summary: Check service availability
+      operationId: getServiceAvailability
+      responses:
+        '200':
+          description: Service status.
+  /api/partners/v1/general/nigerian-banks:
+    get:
+      tags:
+      - General
+      summary: List Nigerian banks
+      operationId: listNigerianBanksGeneral
+      responses:
+        '200':
+          description: Bank list.
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: 'Prestmit Partner API key issued from the developer dashboard. Optional
+
+        IP whitelisting can be enabled per key.
+
+        '

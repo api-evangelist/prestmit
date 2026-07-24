@@ -1,0 +1,109 @@
+openapi: 3.1.0
+info:
+  title: Prestmit Partner Bank Accounts Gift Cards - Buy API
+  description: 'The Prestmit Partner API allows developers to automate buying and selling of
+
+    gift cards, manage wallet balances and payouts, and integrate Prestmit
+
+    transactions into their own applications. Authentication is performed via an
+
+    x-api-key header, with optional IP whitelisting. A sandbox environment is
+
+    available for development.
+
+    '
+  version: '1.0'
+  contact:
+    name: Prestmit Developer Support
+    url: https://prestmit.io/developers
+  license:
+    name: Prestmit Terms of Service
+    url: https://prestmit.io/terms-of-service
+servers:
+- url: https://api.prestmit.io
+  description: Production
+- url: https://dev-api.prestmit.io
+  description: Sandbox
+security:
+- apiKey: []
+tags:
+- name: Gift Cards - Buy
+  description: Purchase gift cards programmatically.
+paths:
+  /api/partners/v1/giftcard/trade/buy/config:
+    get:
+      tags:
+      - Gift Cards - Buy
+      summary: Get buy configuration
+      operationId: getBuyConfig
+      responses:
+        '200':
+          description: Configuration data.
+  /api/partners/v1/giftcard/trade/buy/calculate-payment:
+    post:
+      tags:
+      - Gift Cards - Buy
+      summary: Calculate payment totals for a purchase
+      operationId: calculateBuyPayment
+      responses:
+        '200':
+          description: Calculated totals.
+  /api/partners/v1/giftcard/trade/buy/create:
+    post:
+      tags:
+      - Gift Cards - Buy
+      summary: Place a gift card purchase order
+      operationId: createBuyOrder
+      responses:
+        '201':
+          description: Order placed.
+  /api/partners/v1/giftcard/trade/buy/crypto-payment-status/{reference}:
+    get:
+      tags:
+      - Gift Cards - Buy
+      summary: Poll crypto payment status
+      operationId: getBuyCryptoPaymentStatus
+      parameters:
+      - name: reference
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Payment status.
+  /api/partners/v1/giftcard/trade/buy/fetch-codes/{reference}:
+    get:
+      tags:
+      - Gift Cards - Buy
+      summary: Retrieve purchased gift card codes
+      operationId: fetchBuyCodes
+      parameters:
+      - name: reference
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Gift card codes.
+  /api/partners/v1/giftcard/trade/buy/history:
+    get:
+      tags:
+      - Gift Cards - Buy
+      summary: List gift card purchase history
+      operationId: getBuyHistory
+      responses:
+        '200':
+          description: Purchase history.
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: 'Prestmit Partner API key issued from the developer dashboard. Optional
+
+        IP whitelisting can be enabled per key.
+
+        '
