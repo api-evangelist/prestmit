@@ -1,0 +1,274 @@
+openapi: 3.1.0
+info:
+  title: Prestmit Partner API
+  description: |
+    The Prestmit Partner API allows developers to automate buying and selling of
+    gift cards, manage wallet balances and payouts, and integrate Prestmit
+    transactions into their own applications. Authentication is performed via an
+    x-api-key header, with optional IP whitelisting. A sandbox environment is
+    available for development.
+  version: "1.0"
+  contact:
+    name: Prestmit Developer Support
+    url: https://prestmit.io/developers
+  license:
+    name: Prestmit Terms of Service
+    url: https://prestmit.io/terms-of-service
+servers:
+  - url: https://api.prestmit.io
+    description: Production
+  - url: https://dev-api.prestmit.io
+    description: Sandbox
+tags:
+  - name: General
+    description: Account profile, commissions, service availability, and bank lookups.
+  - name: Lookup
+    description: Reference data for banks, gift card categories, and payout methods.
+  - name: Bank Accounts
+    description: Manage Naira and Cedis payout bank accounts.
+  - name: Wallet
+    description: Wallet balance and fiat withdrawal management.
+  - name: Gift Cards - Buy
+    description: Purchase gift cards programmatically.
+  - name: Gift Cards - Sell
+    description: Sell gift cards and configure payout methods.
+paths:
+  /api/partners/v1/general/user:
+    get:
+      tags: [General]
+      summary: Retrieve account profile
+      operationId: getAccountProfile
+      responses:
+        "200": { description: Account profile returned. }
+  /api/partners/v1/general/commissions-and-fees:
+    get:
+      tags: [General]
+      summary: Check current commission and fee rates
+      operationId: getCommissionsAndFees
+      responses:
+        "200": { description: Current rates. }
+  /api/partners/v1/general/service-availability:
+    get:
+      tags: [General]
+      summary: Check service availability
+      operationId: getServiceAvailability
+      responses:
+        "200": { description: Service status. }
+  /api/partners/v1/general/nigerian-banks:
+    get:
+      tags: [General]
+      summary: List Nigerian banks
+      operationId: listNigerianBanksGeneral
+      responses:
+        "200": { description: Bank list. }
+  /api/partners/v1/lookup/nigerian-banks:
+    get:
+      tags: [Lookup]
+      summary: Nigerian bank directory
+      operationId: lookupNigerianBanks
+      responses:
+        "200": { description: Bank directory. }
+  /api/partners/v1/lookup/ghanian-banks:
+    get:
+      tags: [Lookup]
+      summary: Ghanaian bank directory
+      operationId: lookupGhanaianBanks
+      responses:
+        "200": { description: Bank directory. }
+  /api/partners/v1/lookup/sell-giftcard-categories:
+    get:
+      tags: [Lookup]
+      summary: List gift card categories
+      operationId: lookupSellGiftcardCategories
+      responses:
+        "200": { description: Category list. }
+  /api/partners/v1/lookup/sell-giftcard-subcategories:
+    get:
+      tags: [Lookup]
+      summary: List saleable gift card subcategories
+      operationId: lookupSellGiftcardSubcategories
+      responses:
+        "200": { description: Subcategory list. }
+  /api/partners/v1/lookup/sell-giftcard-filters:
+    get:
+      tags: [Lookup]
+      summary: List available gift card sale filters
+      operationId: lookupSellGiftcardFilters
+      responses:
+        "200": { description: Filter list. }
+  /api/partners/v1/lookup/sell-giftcard-payout-methods:
+    get:
+      tags: [Lookup]
+      summary: List gift card payout method names
+      operationId: lookupSellGiftcardPayoutMethods
+      responses:
+        "200": { description: Payout method names. }
+  /api/partners/v1/bank-accounts/naira/list:
+    get:
+      tags: [Bank Accounts]
+      summary: Retrieve Naira bank accounts
+      operationId: listNairaBankAccounts
+      responses:
+        "200": { description: Naira accounts. }
+  /api/partners/v1/bank-accounts/naira/create:
+    post:
+      tags: [Bank Accounts]
+      summary: Add Naira bank account
+      operationId: createNairaBankAccount
+      responses:
+        "201": { description: Account created. }
+  /api/partners/v1/bank-accounts/naira/{id}:
+    delete:
+      tags: [Bank Accounts]
+      summary: Remove a Naira bank account
+      operationId: deleteNairaBankAccount
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "204": { description: Account removed. }
+  /api/partners/v1/bank-accounts/cedis/list:
+    get:
+      tags: [Bank Accounts]
+      summary: Retrieve Cedis bank accounts
+      operationId: listCedisBankAccounts
+      responses:
+        "200": { description: Cedis accounts. }
+  /api/partners/v1/bank-accounts/cedis/create:
+    post:
+      tags: [Bank Accounts]
+      summary: Add Cedis bank account (deprecated)
+      deprecated: true
+      operationId: createCedisBankAccountV1
+      responses:
+        "201": { description: Account created. }
+  /api/partners/v1/bank-accounts/cedis/create-v2:
+    post:
+      tags: [Bank Accounts]
+      summary: Add Cedis bank account (v2)
+      operationId: createCedisBankAccountV2
+      responses:
+        "201": { description: Account created. }
+  /api/partners/v1/bank-accounts/cedis/{id}:
+    delete:
+      tags: [Bank Accounts]
+      summary: Remove a Cedis bank account
+      operationId: deleteCedisBankAccount
+      parameters:
+        - { name: id, in: path, required: true, schema: { type: string } }
+      responses:
+        "204": { description: Account removed. }
+  /api/partners/v1/wallet/fiat/details:
+    get:
+      tags: [Wallet]
+      summary: Fetch wallet details
+      operationId: getWalletDetails
+      responses:
+        "200": { description: Wallet details. }
+  /api/partners/v1/wallet/fiat/create-withdrawal:
+    post:
+      tags: [Wallet]
+      summary: Request a fiat withdrawal
+      operationId: createWalletWithdrawal
+      responses:
+        "201": { description: Withdrawal initiated. }
+  /api/partners/v1/wallet/fiat/withdrawal-history:
+    get:
+      tags: [Wallet]
+      summary: List withdrawal history
+      operationId: getWalletWithdrawalHistory
+      responses:
+        "200": { description: Withdrawal history. }
+  /api/partners/v1/wallet/fiat/withdrawal-history/{withdrawalId}/receipt:
+    get:
+      tags: [Wallet]
+      summary: Get withdrawal receipt
+      operationId: getWalletWithdrawalReceipt
+      parameters:
+        - { name: withdrawalId, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Withdrawal receipt. }
+  /api/partners/v1/giftcard/trade/buy/config:
+    get:
+      tags: [Gift Cards - Buy]
+      summary: Get buy configuration
+      operationId: getBuyConfig
+      responses:
+        "200": { description: Configuration data. }
+  /api/partners/v1/giftcard/trade/buy/calculate-payment:
+    post:
+      tags: [Gift Cards - Buy]
+      summary: Calculate payment totals for a purchase
+      operationId: calculateBuyPayment
+      responses:
+        "200": { description: Calculated totals. }
+  /api/partners/v1/giftcard/trade/buy/create:
+    post:
+      tags: [Gift Cards - Buy]
+      summary: Place a gift card purchase order
+      operationId: createBuyOrder
+      responses:
+        "201": { description: Order placed. }
+  /api/partners/v1/giftcard/trade/buy/crypto-payment-status/{reference}:
+    get:
+      tags: [Gift Cards - Buy]
+      summary: Poll crypto payment status
+      operationId: getBuyCryptoPaymentStatus
+      parameters:
+        - { name: reference, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Payment status. }
+  /api/partners/v1/giftcard/trade/buy/fetch-codes/{reference}:
+    get:
+      tags: [Gift Cards - Buy]
+      summary: Retrieve purchased gift card codes
+      operationId: fetchBuyCodes
+      parameters:
+        - { name: reference, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: Gift card codes. }
+  /api/partners/v1/giftcard/trade/buy/history:
+    get:
+      tags: [Gift Cards - Buy]
+      summary: List gift card purchase history
+      operationId: getBuyHistory
+      responses:
+        "200": { description: Purchase history. }
+  /api/partners/v1/giftcard/trade/sell/rate-calculator-data:
+    get:
+      tags: [Gift Cards - Sell]
+      summary: Fetch rate calculator data
+      operationId: getSellRateCalculatorData
+      responses:
+        "200": { description: Rate calculator data. }
+  /api/partners/v1/giftcard/trade/sell/payout-methods:
+    get:
+      tags: [Gift Cards - Sell]
+      summary: List payout method options
+      operationId: getSellPayoutMethods
+      responses:
+        "200": { description: Payout options. }
+  /api/partners/v1/giftcard/trade/sell/create:
+    post:
+      tags: [Gift Cards - Sell]
+      summary: Initiate a gift card sale
+      operationId: createSellTransaction
+      responses:
+        "201": { description: Sale initiated. }
+  /api/partners/v1/giftcard/trade/sell/history:
+    get:
+      tags: [Gift Cards - Sell]
+      summary: List gift card sales history
+      operationId: getSellHistory
+      responses:
+        "200": { description: Sales history. }
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
+      description: |
+        Prestmit Partner API key issued from the developer dashboard. Optional
+        IP whitelisting can be enabled per key.
+security:
+  - apiKey: []

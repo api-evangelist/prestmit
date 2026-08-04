@@ -1,0 +1,24 @@
+{
+  "provider": "prestmit",
+  "sources": [
+    "prestmit-bank-accounts-api-openapi.yml",
+    "prestmit-general-api-openapi.yml",
+    "prestmit-gift-cards-buy-api-openapi.yml",
+    "prestmit-gift-cards-sell-api-openapi.yml",
+    "prestmit-lookup-api-openapi.yml",
+    "prestmit-wallet-api-openapi.yml"
+  ],
+  "outputs": [
+    "prestmit-bank-accounts-api-openapi.yml",
+    "prestmit-general-api-openapi.yml",
+    "prestmit-gift-cards-buy-api-openapi.yml",
+    "prestmit-gift-cards-sell-api-openapi.yml",
+    "prestmit-lookup-api-openapi.yml",
+    "prestmit-wallet-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
