@@ -1,0 +1,70 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Prestmit Partner Bank Accounts General API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "General",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve account profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/user"
+          },
+          "docs": "Retrieve account profile"
+        },
+        {
+          "info": {
+            "name": "Check current commission and fee rates",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/commissions-and-fees"
+          },
+          "docs": "Check current commission and fee rates"
+        },
+        {
+          "info": {
+            "name": "Check service availability",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/service-availability"
+          },
+          "docs": "Check service availability"
+        },
+        {
+          "info": {
+            "name": "List Nigerian banks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/general/nigerian-banks"
+          },
+          "docs": "List Nigerian banks"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

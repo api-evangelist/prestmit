@@ -1,0 +1,547 @@
+{
+  "item": [
+    {
+      "id": "6cdad117-73d7-4313-bd45-59555acc94ab",
+      "name": "Gift Cards - Buy",
+      "description": {
+        "content": "Purchase gift cards programmatically.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8f6a8e96-c533-4318-8da2-48fa50a552fb",
+          "name": "Get buy configuration",
+          "request": {
+            "name": "Get buy configuration",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "config"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9562c788-3cda-4016-9bb1-f4ff9a8eb078",
+              "name": "Configuration data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "config"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "43ec422e-c065-4778-b276-851370c2da12",
+          "name": "Calculate payment totals for a purchase",
+          "request": {
+            "name": "Calculate payment totals for a purchase",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "calculate-payment"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "921723ff-ba2c-4c17-8193-326a109d7822",
+              "name": "Calculated totals.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "calculate-payment"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "790bcef4-9403-464b-b3e1-cf45beb95b3a",
+          "name": "Place a gift card purchase order",
+          "request": {
+            "name": "Place a gift card purchase order",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "11311607-563e-4d2d-8c49-e6424db09205",
+              "name": "Order placed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "07daeea8-5265-40fc-894e-68d1ee35ced5",
+          "name": "Poll crypto payment status",
+          "request": {
+            "name": "Poll crypto payment status",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "crypto-payment-status",
+                ":reference"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reference",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "266a035b-f34f-490a-8c0d-8c561b502116",
+              "name": "Payment status.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "crypto-payment-status",
+                    ":reference"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "reference",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "40fe48f7-64d3-45db-a6bb-c45cb7e5aaec",
+          "name": "Retrieve purchased gift card codes",
+          "request": {
+            "name": "Retrieve purchased gift card codes",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "fetch-codes",
+                ":reference"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "reference",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f236a4f1-ba8a-4813-b4ee-85062f985ad4",
+              "name": "Gift card codes.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "fetch-codes",
+                    ":reference"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "reference",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "74faf7b6-f2f2-46b9-bfac-680985244e0c",
+          "name": "List gift card purchase history",
+          "request": {
+            "name": "List gift card purchase history",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "buy",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "49b55a88-19d5-4281-bf84-3645a574301d",
+              "name": "Purchase history.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "buy",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.prestmit.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3457b051-82de-4e66-b463-e8e3c1b8051a",
+    "name": "Prestmit Partner Bank Accounts Gift Cards - Buy API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Prestmit Partner API allows developers to automate buying and selling of\ngift cards, manage wallet balances and payouts, and integrate Prestmit\ntransactions into their own applications. Authentication is performed via an\nx-api-key header, with optional IP whitelisting. A sandbox environment is\navailable for development.\n\n\nContact Support:\n Name: Prestmit Developer Support",
+      "type": "text/plain"
+    }
+  }
+}

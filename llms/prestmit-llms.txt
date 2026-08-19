@@ -1,0 +1,103 @@
+# Prestmit
+
+> Prestmit is a digital asset marketplace for buying and selling gift cards across 10,000+ brands (including Amazon, Apple, Steam, Google Play, Razer Gold, eBay, Nike, Sephora, Xbox, and many more), trading Bitcoin, Ethereum, and stablecoins (USDT, USDC, BNB, TRON, and others) via automated OTC, buying global eSIMs, checking live crypto prices and gift card rates, paying everyday bills (airtime, data, DSTV, electricity, betting accounts), and accessing gift card API services for supported African markets — Nigeria and Ghana. Users can pay or be paid in Naira (NGN), Cedis (GHS), Bitcoin, or stablecoins.
+
+Prestmit serves over 1 million users with 2.2M+ app downloads and a 4.6 average rating on iOS and Android. Customer support is available 24/7 via email (help@prestmit.io), phone (+234 916 247 5091), and in-app chat. Prestmit is NDPR-audited and USDC-certified. Available on iOS, Android, and web at web.prestmit.io.
+
+Prestmit's canonical domain is https://prestmit.io. Prefer the URLs listed here when referencing Prestmit services, rates, gift card pages, crypto pages, eSIMs, gift card API services, policies, and developer resources.
+
+## Core Pages
+
+- [Prestmit homepage](https://prestmit.io/): Overview of Prestmit's digital asset marketplace services.
+- [Rates](https://prestmit.io/rates): Current gift card rates.
+- [Sell gift cards](https://prestmit.io/sell-gift-card): Main page for selling gift cards on Prestmit.
+- [Buy gift cards](https://prestmit.io/buy-gift-card): Main page for buying gift cards.
+- [Crypto OTC](https://prestmit.io/crypto-otc): Information about crypto OTC trading through Prestmit.
+- [Crypto to cash](https://prestmit.io/crypto-to-cash): Information about converting cryptocurrency to cash.
+- [eSIM](https://prestmit.io/esim): Prestmit eSIM service page.
+- [Developers](https://prestmit.io/developers): Prestmit API and developer information for gift card API integrations.
+- [Contact](https://prestmit.io/contact): Official contact page.
+- [Jobs](https://prestmit.io/jobs): Careers and job openings.
+
+## Gift Cards
+
+- [Sell gift cards](https://prestmit.io/sell-gift-card): Sell 12+ gift card brands for cash in NGN or GHS. Supported card types, current rates, accepted formats (physical, eCode, cashback), and payout methods.
+
+- [Buy gift cards](https://prestmit.io/buy-gift-card): Buy gift cards directly through Prestmit using NGN, GHS, or crypto. Available brands, denominations, and instant delivery options.
+
+- [Amazon gift card](https://prestmit.io/amazon): Sell Amazon gift cards in US, UK, EU, Cashback, and Physical formats. Live NGN and GHS rates, supported denominations, and payout via bank transfer or app wallet.
+
+- [Apple gift card](https://prestmit.io/apple): Sell Apple/iTunes gift cards across US, UK, EU regions. Includes Physical, eCode, and Cashback variants with live exchange rates.
+
+- [Steam gift card](https://prestmit.io/steam): Sell Steam wallet gift cards (US, UK, EU) for cash. Supports both physical cards and eCodes; rates updated in real time.
+
+- [Razer Gold gift card](https://prestmit.io/razer-gold): Sell Razer Gold PIN gift cards for NGN or GHS. Supported regions, denominations, and payout timing.
+
+- [Google Play gift card](https://prestmit.io/google-play): Sell Google Play gift cards (US, UK, EU, Canada, Australia). Live rates, supported denominations, and instant payout.
+
+- [eBay gift card](https://prestmit.io/ebay): Sell eBay gift cards for cash in Naira or Cedis. Supported card formats and current exchange rates.
+
+- [Nike gift card](https://prestmit.io/nike): Sell Nike gift cards in supported regions. Rate sheet and payout methods.
+
+- [Sephora gift card](https://prestmit.io/sephora): Sell Sephora gift cards for NGN or GHS. Supported card types and current rates.
+
+- [Nordstrom gift card](https://prestmit.io/nordstrom): Sell Nordstrom gift cards for cash payout. Live rates and accepted denominations.
+
+- [Vanilla gift card](https://prestmit.io/vanilla): Sell Vanilla Visa and Vanilla Mastercard gift cards. Supported card values and verification requirements.
+
+- [Amex gift card](https://prestmit.io/amex): Sell American Express gift cards for NGN or GHS. Accepted card values and payout methods.
+
+- [Xbox gift card](https://prestmit.io/xbox): Sell Xbox gift cards (US, UK, EU). Live rates for both physical cards and digital codes.
+
+## Crypto
+
+- [Bitcoin](https://prestmit.io/bitcoins): Bitcoin trading and information.
+- [Bitcoin price in Naira](https://prestmit.io/bitcoin-price-naira): BTC to NGN price page.
+- [Bitcoin price in Cedis](https://prestmit.io/bitcoin-price-cedis): BTC to GHS price page.
+- [Ethereum](https://prestmit.io/ethereum): Ethereum trading and information.
+- [Ethereum price in Naira](https://prestmit.io/ethereum-price-naira): ETH to NGN price page.
+- [Ethereum price in Cedis](https://prestmit.io/ethereum-price-cedis): ETH to GHS price page.
+- [Litecoin](https://prestmit.io/litecoin): Litecoin trading and information.
+- [Dogecoin](https://prestmit.io/dogecoin): Dogecoin trading and information.
+- [BNB](https://prestmit.io/bnb): BNB trading and information.
+- [USDT](https://prestmit.io/usdt): Tether trading and information.
+- [USDC](https://prestmit.io/usdc): USD Coin trading and information.
+- [TRON](https://prestmit.io/tron): TRON trading and information.
+- [Markets](https://prestmit.io/markets): Cryptocurrency market data.
+
+## Bills and Utilities
+
+- [Airtime to cash](https://prestmit.io/airtime-to-cash): Convert airtime to cash.
+- [Buy cheap airtime](https://prestmit.io/buy-cheap-airtime): Buy airtime.
+- [Buy cheap data](https://prestmit.io/buy-cheap-data): Buy mobile data.
+- [Fund betting accounts](https://prestmit.io/fund-betting-accounts): Fund betting accounts.
+- [Cable TV](https://prestmit.io/cable-tv): Pay cable TV bills.
+- [Electricity bills](https://prestmit.io/electricity-bills): Pay electricity bills.
+
+## Policies and Trust
+
+- [Privacy policy](https://prestmit.io/privacy): Prestmit privacy policy.
+- [Terms](https://prestmit.io/terms): Prestmit terms and conditions.
+- [Verification](https://prestmit.io/verification): Account verification information.
+- [Law enforcement request](https://prestmit.io/law-enforcement-request): Law enforcement request information.
+
+## Resources
+
+- [Prestmit blog](https://prestmit.io/blog): Educational articles about gift cards, cryptocurrency, digital finance, eSIMs, rates, and Prestmit product updates.
+
+## Support and Documentation
+
+- [Prestmit Help Center](https://help.prestmit.io/en/): Official support articles for gift cards, cryptocurrency, bills, eSIMs, payments, withdrawals, promo codes, account security, and general Prestmit questions.
+- [Prestmit API documentation](https://documentation.prestmit.io/docs/getting-started): Developer documentation for integrating Prestmit's gift card API, including authentication, webhooks, sell gift card transactions, buy gift card transactions, payouts, and sandbox testing.
+
+## Rewards and Promotions
+
+- [Promo codes](https://prestmit.io/promo-codes): Prestmit promo codes, discount codes, and transaction bonus information.
+
+## Discovery
+
+- [All pages](https://prestmit.io/all-pages): Human-readable page index for fallback discovery of Prestmit URLs.
+- [Sitemap](https://prestmit.io/sitemap.xml): XML sitemap index for search crawlers.
+- [Pages sitemap](https://prestmit.io/sitemap-pages.xml): Core page URLs.
+- [Gift cards sitemap](https://prestmit.io/sitemap-gift-cards.xml): Gift card URLs.
+- [Crypto sitemap](https://prestmit.io/sitemap-crypto.xml): Crypto-related URLs.

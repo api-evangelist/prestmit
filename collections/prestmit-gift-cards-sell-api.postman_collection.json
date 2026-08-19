@@ -1,0 +1,357 @@
+{
+  "item": [
+    {
+      "id": "f79f6a06-af97-4332-92f2-5b2b354acb9e",
+      "name": "Gift Cards - Sell",
+      "description": {
+        "content": "Sell gift cards and configure payout methods.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "132b72c4-dda8-4326-8a2e-826893423b82",
+          "name": "Fetch rate calculator data",
+          "request": {
+            "name": "Fetch rate calculator data",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "rate-calculator-data"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1387957c-041d-4e52-bd23-76c7e527c12e",
+              "name": "Rate calculator data.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "rate-calculator-data"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "777964f5-657c-4ac6-bfdb-db4c0ad14009",
+          "name": "List payout method options",
+          "request": {
+            "name": "List payout method options",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "payout-methods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d5e6f8b1-1952-4d47-994f-39ad1d5dc033",
+              "name": "Payout options.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "payout-methods"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0b095a9c-b4a1-4a4e-94db-32c286de8f7d",
+          "name": "Initiate a gift card sale",
+          "request": {
+            "name": "Initiate a gift card sale",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "create"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ba60cc9-1d60-4129-9636-a28c84eaaee5",
+              "name": "Sale initiated.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "create"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cece1bc5-4433-47cd-99ed-7dc55b4972bf",
+          "name": "List gift card sales history",
+          "request": {
+            "name": "List gift card sales history",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "giftcard",
+                "trade",
+                "sell",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2f2d2cd4-a5dd-454a-8f8d-c7cc700b0e31",
+              "name": "Sales history.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "giftcard",
+                    "trade",
+                    "sell",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.prestmit.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "1e4171f8-fad7-4514-a633-020e42a8f600",
+    "name": "Prestmit Partner Bank Accounts Gift Cards - Sell API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Prestmit Partner API allows developers to automate buying and selling of\ngift cards, manage wallet balances and payouts, and integrate Prestmit\ntransactions into their own applications. Authentication is performed via an\nx-api-key header, with optional IP whitelisting. A sandbox environment is\navailable for development.\n\n\nContact Support:\n Name: Prestmit Developer Support",
+      "type": "text/plain"
+    }
+  }
+}

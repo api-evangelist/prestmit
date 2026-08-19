@@ -1,0 +1,70 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Prestmit Partner Bank Accounts Gift Cards - Sell API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Gift Cards - Sell",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch rate calculator data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/rate-calculator-data"
+          },
+          "docs": "Fetch rate calculator data"
+        },
+        {
+          "info": {
+            "name": "List payout method options",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/payout-methods"
+          },
+          "docs": "List payout method options"
+        },
+        {
+          "info": {
+            "name": "Initiate a gift card sale",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/create"
+          },
+          "docs": "Initiate a gift card sale"
+        },
+        {
+          "info": {
+            "name": "List gift card sales history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/giftcard/trade/sell/history"
+          },
+          "docs": "List gift card sales history"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

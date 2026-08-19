@@ -1,0 +1,487 @@
+{
+  "item": [
+    {
+      "id": "12d6a2f0-0b4e-452b-9698-5f08e31e6b8d",
+      "name": "Lookup",
+      "description": {
+        "content": "Reference data for banks, gift card categories, and payout methods.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "7d6b1845-5e46-4d3b-8932-57707dd98f70",
+          "name": "Nigerian bank directory",
+          "request": {
+            "name": "Nigerian bank directory",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "nigerian-banks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ce922ef2-ec8a-4bdc-af6a-d647f1b7606e",
+              "name": "Bank directory.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "nigerian-banks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cc1ed71a-f2f8-4c15-bcf9-8b4ca0da59ef",
+          "name": "Ghanaian bank directory",
+          "request": {
+            "name": "Ghanaian bank directory",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "ghanian-banks"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0f681743-7122-4a02-a8dd-1aaacd02824b",
+              "name": "Bank directory.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "ghanian-banks"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "379b0e6b-64bd-4bcc-8e34-de58ee8f7c0b",
+          "name": "List gift card categories",
+          "request": {
+            "name": "List gift card categories",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "19c04ef6-ffea-4822-b20e-398c62598a9c",
+              "name": "Category list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "289d601b-66d3-471d-b3bc-554da64d2859",
+          "name": "List saleable gift card subcategories",
+          "request": {
+            "name": "List saleable gift card subcategories",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-subcategories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d8cfeae0-39a4-404b-8616-020dc768ffa8",
+              "name": "Subcategory list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-subcategories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7be76d5f-4de2-4c87-ab9a-2b0d33031ebc",
+          "name": "List available gift card sale filters",
+          "request": {
+            "name": "List available gift card sale filters",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-filters"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2cacaffc-1f2a-48ec-af5a-64660d7c85b6",
+              "name": "Filter list.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-filters"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f6050a79-db0c-46c0-b0ea-d4f3423fa604",
+          "name": "List gift card payout method names",
+          "request": {
+            "name": "List gift card payout method names",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "partners",
+                "v1",
+                "lookup",
+                "sell-giftcard-payout-methods"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "bb0f306a-d734-45b0-ae00-0ced55b6644e",
+              "name": "Payout method names.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "partners",
+                    "v1",
+                    "lookup",
+                    "sell-giftcard-payout-methods"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "x-api-key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.prestmit.io",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "40afd20d-7e8e-4544-839e-fe887a3ed36b",
+    "name": "Prestmit Partner Bank Accounts Lookup API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Prestmit Partner API allows developers to automate buying and selling of\ngift cards, manage wallet balances and payouts, and integrate Prestmit\ntransactions into their own applications. Authentication is performed via an\nx-api-key header, with optional IP whitelisting. A sandbox environment is\navailable for development.\n\n\nContact Support:\n Name: Prestmit Developer Support",
+      "type": "text/plain"
+    }
+  }
+}

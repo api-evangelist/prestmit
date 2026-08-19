@@ -1,0 +1,77 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Prestmit Partner Bank Accounts Wallet API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Wallet",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch wallet details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/details"
+          },
+          "docs": "Fetch wallet details"
+        },
+        {
+          "info": {
+            "name": "Request a fiat withdrawal",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/create-withdrawal"
+          },
+          "docs": "Request a fiat withdrawal"
+        },
+        {
+          "info": {
+            "name": "List withdrawal history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/withdrawal-history"
+          },
+          "docs": "List withdrawal history"
+        },
+        {
+          "info": {
+            "name": "Get withdrawal receipt",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/wallet/fiat/withdrawal-history/:withdrawalId/receipt",
+            "params": [
+              {
+                "name": "withdrawalId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get withdrawal receipt"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,117 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Prestmit Partner Bank Accounts API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "x-api-key",
+      "value": "{{x-api-key}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Bank Accounts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve Naira bank accounts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/list"
+          },
+          "docs": "Retrieve Naira bank accounts"
+        },
+        {
+          "info": {
+            "name": "Add Naira bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/create"
+          },
+          "docs": "Add Naira bank account"
+        },
+        {
+          "info": {
+            "name": "Remove a Naira bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/naira/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove a Naira bank account"
+        },
+        {
+          "info": {
+            "name": "Retrieve Cedis bank accounts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/list"
+          },
+          "docs": "Retrieve Cedis bank accounts"
+        },
+        {
+          "info": {
+            "name": "Add Cedis bank account (deprecated)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/create"
+          },
+          "docs": "Add Cedis bank account (deprecated)"
+        },
+        {
+          "info": {
+            "name": "Add Cedis bank account (v2)",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/create-v2"
+          },
+          "docs": "Add Cedis bank account (v2)"
+        },
+        {
+          "info": {
+            "name": "Remove a Cedis bank account",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.prestmit.io/api/partners/v1/bank-accounts/cedis/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove a Cedis bank account"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
