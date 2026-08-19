@@ -33,7 +33,7 @@ created: '2025-02-08'
 modified: '2026-04-28'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/prestmit/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: prestmit:prestmit-partner-api
   name: Prestmit Partner API
