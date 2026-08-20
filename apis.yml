@@ -70,7 +70,8 @@ apis:
   name: Prestmit General API
   description: Account profile, commissions, service availability, and bank lookups.
   humanURL: https://prestmit.io/developers
-  tags:
+  tags: []
+  tags_raw:
   - General
   properties:
   - type: OpenAPI
@@ -107,6 +108,8 @@ apis:
   description: Wallet balance and fiat withdrawal management.
   humanURL: https://prestmit.io/developers
   tags:
+  - Wallets
+  tags_raw:
   - Wallet
   properties:
   - type: OpenAPI
