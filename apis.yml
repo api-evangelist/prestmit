@@ -128,6 +128,8 @@ apis:
   - type: OpenAPI
     url: openapi/prestmit-wallet-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.prestmit.io/
   - type: AgenticAccess
     url: agentic-access/prestmit-agentic-access.yml
   - type: DomainSecurity
