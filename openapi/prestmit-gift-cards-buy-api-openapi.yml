@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Prestmit Partner Bank Accounts Gift Cards - Buy API
+  title: Prestmit Partner Gift Cards - Buy API
   description: 'The Prestmit Partner API allows developers to automate buying and selling of
 
     gift cards, manage wallet balances and payouts, and integrate Prestmit
@@ -9,9 +9,7 @@ info:
 
     x-api-key header, with optional IP whitelisting. A sandbox environment is
 
-    available for development.
-
-    '
+    available for development.'
   version: '1.0'
   contact:
     name: Prestmit Developer Support

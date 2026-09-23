@@ -1,12 +1,7 @@
 {
   "provider": "prestmit",
   "sources": [
-    "prestmit-bank-accounts-api-openapi.yml",
-    "prestmit-general-api-openapi.yml",
-    "prestmit-gift-cards-buy-api-openapi.yml",
-    "prestmit-gift-cards-sell-api-openapi.yml",
-    "prestmit-lookup-api-openapi.yml",
-    "prestmit-wallet-api-openapi.yml"
+    "_original/prestmit-openapi.yml"
   ],
   "outputs": [
     "prestmit-bank-accounts-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "prestmit-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "prestmit-bank-accounts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "prestmit-general-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "prestmit-gift-cards-buy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "prestmit-gift-cards-sell-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "prestmit-lookup-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "prestmit-wallet-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
